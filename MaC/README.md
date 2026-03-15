@@ -2,10 +2,13 @@
 *(Basado en Management as Code, https://pewma-ai.github.io/mac/)*
 
 >[!Ultima sesión]
-[sesion-2026-03-14.md](sesiones/sesion-2026-03-14.md) (Abierta)
+[sesion-2026-03-14.md](sesiones/sesion-2026-03-14.md) (Cerrada)
 
 >[!Deudas Abiertas]
->Nada pendiente por ahora
+>- Pendiente revisar análisis de Gemini Deep Research (Objetivo 2).
+>- Pendiente documentar concepto en `about_playbooks.md` (Objetivo 3).
+>- Pendiente definir mecanismos de distribución de playbooks (Objetivo 4).
+>- Pendiente forma final de `README.md` en raíz (Objetivo 5).
 ## Contenidos MaC/
 
 - [`MaC/`](README.md): Qué hacer a continuación
