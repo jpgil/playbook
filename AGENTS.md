@@ -9,7 +9,7 @@ Al inicio de cada sesión o conversación, leer `MaC/procesos/amigo-MaC.md` **an
 ## Tipos de trabajo
 
 1. **Gestión** — Gobernada por `MaC/ritual_de_sesion.md` (se accede vía `procesos/amigo-MaC.md`). Sesiones, log, roadmap, planificación.
-2. **Operativo** — Guiado por `playbook/README.md`. Antes de implementar un ítem del Plan de Acción, consultar el playbook por si hay una guía relevante.
+2. **Operativo** — Guiado por el `README.md` del repositorio. Antes de implementar un ítem del Plan de Acción, consultar el índice de guías del playbook por si hay una relevante.
 3. **Skills del agente** — Capacidades propias (herramientas, búsqueda, ejecución). Usar libremente dentro del contexto de 1 y 2.
 
 ## Límites

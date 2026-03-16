@@ -38,4 +38,4 @@ Los procesos definen **qué hacer ante eventos específicos**. Están indexados 
 |---|---|
 | El usuario pide **abrir** o **cerrar sesión** | Leer [`MaC/ritual_de_sesion.md`](../ritual_de_sesion.md) y seguir el flujo correspondiente (§1 o §4). |
 | La solicitud involucra **gestión, documentación MaC o procesos administrativos** | Consultar [`MaC/procesos/`](.) por si hay un proceso formalizado. Si existe, leerlo y seguirlo. |
-| La solicitud involucra **implementación o tareas operativas** | Consultar [`playbook/`](../../playbook/) antes de ejecutar, por si hay una guía relevante. |
+| La solicitud involucra **implementación o tareas operativas** | Consultar el [`README.md`](../../README.md) del repositorio antes de ejecutar, por si hay una guía relevante. |

@@ -45,7 +45,7 @@ Listado plano de archivos con su rol MaC entre paréntesis:
 - [`log.md`](log.md): **Decisiones** (Registro histórico y hechos consumados).
 - [`ritual_de_sesion.md`](ritual_de_sesion.md): **Políticas de Gestión** (Cómo administramos).
 - [`procesos/`](procesos/): **Procesos MaC** (Skills de agente que formalizan procesos recurrentes).
-- [Playbook](../playbook/README.md): **Políticas Operativas** (Cómo ejecutamos).
+- [Playbook](../README.md): **Políticas Operativas** (Cómo ejecutamos).
 ```
 
 **Reglas:**

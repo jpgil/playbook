@@ -29,7 +29,7 @@ Al iniciar cualquier sesión, el agente ejecuta estos pasos **en orden y antes d
 
 ### Antes de implementar
 
-Antes de ejecutar un ítem del Plan de Acción, consultar [`playbook/README.md`](../playbook/README.md) para verificar si existe una guía relevante al tema que se va a tocar. Si hay una guía, leerla antes de proceder. Esto aplica tanto para humanos como para agentes IA.
+Antes de ejecutar un ítem del Plan de Acción, consultar el [`README.md`](../README.md) del repositorio para verificar si existe una guía relevante al tema que se va a tocar. Si hay una guía, leerla antes de proceder. Esto aplica tanto para humanos como para agentes IA.
 
 ### Plantilla de Sesión
 
