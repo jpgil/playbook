@@ -1,8 +1,11 @@
 # MaC de Playbooks de JPGIL
 *(Basado en Management as Code, https://pewma-ai.github.io/mac/)*
 
->[!Ultima sesión]
->🔴 [sesion-2026-03-15.md](sesiones/sesion-2026-03-15.md) (Cerrada) - Reestructuración profunda del concepto de Playbook. Redactamos el manifiesto, consolidamos la teoría en `docs/` y estandarizamos las operaciones a playbooks genéricos en la raíz del repo. Saldadas todas las deudas previas.
+> [!Ultima sesión]
+> 🟢 [sesion-2026-03-17.md](sesiones/sesion-2026-03-17.md) (Abierta)
+
+> [!Deudas Abiertas]
+> Copiar decisiones a log.md, construir primer playbook de JPGIL.
 
 ## Contenidos MaC/
 
@@ -19,4 +22,5 @@
 
 ---
 ### Sesiones Anteriores
-- [sesion-2026-03-14.md](sesiones/sesion-2026-03-14.md)
+- [sesion-2026-03-15.md](sesiones/sesion-2026-03-15.md) (Cerrada)
+- [sesion-2026-03-14.md](sesiones/sesion-2026-03-14.md) (Cerrada)
