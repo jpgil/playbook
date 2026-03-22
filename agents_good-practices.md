@@ -4,10 +4,7 @@ description: Cómo configurar estándares únicos de contexto y documentar regla
 date: 2026-03-15
 source: https://github.com/jpgil/playbook/blob/main/agents_good-practices.md
 ---
-
 # Buenas Prácticas para Agentes IA en un Repositorio
-
----
 
 ## El problema
 
@@ -86,7 +83,7 @@ Las secciones recomendadas, en orden:
 
 - **Brevedad.** ~150 líneas máximo. Los archivos largos entierran lo importante.
 - **Ejemplos sobre descripciones.** Un fragmento real vale más que párrafos.
-- **Iterar, no planificar.** El mejor `AGENTS.md` crece con el tiempo — agregar una regla la segunda vez que el agente comete el mismo error.
+- **Iterar, no planificar.** El mejor `AGENTS.md` crece con el tiempo — agregar una regla la segunda vez que el agente comete el mismo error (¡y volver a leerlo!)
 - **Tratar como código.** Revisar en PRs, versionar, mantener actualizado.
 
 ---

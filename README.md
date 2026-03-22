@@ -9,7 +9,7 @@
 
 - **[agents_good-practices.md](agents_good-practices.md)** — Cómo configurar estándares únicos de contexto y documentar reglas operativas dentro de un repositorio.
 - **[git-generalidades.md](git-generalidades.md)** — Convenciones de commits, ramas y operaciones en Git para mantener un historial limpio.
-- **[markdown_practicas.md](markdown_practicas.md)** — Reglas de documentación en Markdown y marcadores estructurados para designar tareas pendientes.
+- **[markdown_practicas.md](markdown-inline-AI-tags.md)** — Reglas de documentación en Markdown y marcadores estructurados para designar tareas pendientes.
 - **[github_pages-docsify.md](github_pages-docsify.md)** — Publicar `/docs/` como sitio navegable usando Docsify en GitHub Pages, sin procesos de compilación.
 
 ## Cómo usar este Playbook
