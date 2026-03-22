@@ -29,10 +29,23 @@ El ciclo es bidireccional: llevas tus prácticas a nuevos proyectos, y la experi
 
 ### 1. Markdown puro, prosa primero
 
-Las guías se redactan en **Markdown estándar**. Sin YAML frontmatter obligatorio, sin esquemas JSON, sin formatos inventados para la máquina.
+Las guías se redactan en **Markdown estándar**. El contenido debe ser completamente comprensible sin metadatos adicionales.
 
 - El texto explica el *porqué*, no solo el *qué*. Un agente que entiende la razón detrás de una convención la aplica mejor que uno que memoriza una regla ciega.
-- La estructura del documento (encabezados, listas, tablas, bloques de código) es suficiente para que un agente lo parsee. No necesita metadatos adicionales.
+- La estructura del documento (encabezados, listas, tablas, bloques de código) es suficiente para que un agente lo parsee.
+
+**Front matter YAML (opcional, recomendado):** Cada guía puede incluir un bloque mínimo de metadatos al inicio del archivo para facilitar el descubrimiento y tracking:
+
+```yaml
+---
+title: Nombre de la guía
+description: Una línea descriptiva de qué cubre.
+date: 2026-03-15
+source: https://github.com/usuario/playbook/blob/main/nombre-de-la-guia.md
+---
+```
+
+Los campos `title` y `description` son compatibles con el formato SKILLS de agentes. `date` refleja la última actualización significativa. `source` debe apuntar **al archivo específico del playbook**, no al repositorio general — así quien recibe una copia sabe exactamente de dónde vino y puede consultar la versión original.
 
 > **💡 Principio:** Si un humano no disfruta leer la guía, está mal escrita. La máquina se adapta al formato humano, no al revés.
 

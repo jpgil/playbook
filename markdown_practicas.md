@@ -1,7 +1,11 @@
-# Convenciones de Documentación Markdown
+---
+title: Convenciones de Documentación Markdown
+description: Reglas de documentación en Markdown y marcadores estructurados para designar tareas pendientes.
+date: 2026-03-15
+source: https://github.com/jpgil/playbook/blob/main/markdown_practicas.md
+---
 
-> **Para humanos y agentes IA.**
-> Reglas para mantener la documentación consistente y legible.
+# Convenciones de Documentación Markdown
 
 ---
 

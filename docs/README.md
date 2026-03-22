@@ -1,49 +1,64 @@
-# Playbooks Abiertos
+# Open Playbooks
 
 > Tu conocimiento operativo, versionado, portable y listo para compartir.
 
 ---
 
-## Por qué hacer un Playbook Personal
+## Plan del sitio (pendiente de implementación)
 
-Cada profesional acumula años de decisiones, trucos y convenciones que definen cómo trabaja. Ese conocimiento suele quedarse en la cabeza (intransferible), en wikis abandonadas (desactualizadas) o en archivos de configuración atados a un solo proyecto (no portables).
+Este sitio (`jpgil.github.io/playbook`) es la cara pública del movimiento **Open Playbooks**: la idea de que cada profesional publique sus prácticas operativas como archivos Markdown abiertos, consumibles por humanos y agentes IA por igual.
 
-Un Playbook Personal cambia eso. Es un repositorio de guías en Markdown que:
+### Páginas planificadas
 
-- **Viajan contigo** — de proyecto en proyecto, de empresa en empresa.
-- **Funcionan para humanos y máquinas** — un agente IA lee la misma guía que lees tú, sin necesidad de formatos separados.
-- **Mejoran con el uso** — cada proyecto nuevo alimenta de vuelta tus prácticas.
-- **Democratizan conocimiento** — al publicarlos abiertamente, otros pueden adoptar, adaptar y contribuir.
+#### 1. Portada (este README)
+- Qué es un Open Playbook y por qué importa.
+- La visión: una comunidad donde cada profesional tiene su `github.com/<usuario>/playbook`.
+- Link al repo de ejemplo (este mismo: `github.com/jpgil/playbook`).
 
-> *"Si un humano no disfruta leer la guía, está mal escrita. La máquina se adapta al formato humano, no al revés."*
+#### 2. Reglas de un Playbook (`playbook_rules.md`) — ya existe
+- Las 4 reglas fundamentales: Markdown puro, modularidad, portabilidad, fronteras de gobernanza.
+- Anatomía de una buena guía.
+- Cuándo dividir, cuándo fusionar.
+- **Convención adoptada (2026-03-22):** Front matter YAML opcional y mínimo (`title`, `description`, `date`, `source`) en cada playbook. Compatible con SKILLS de agentes y preparado para motores estáticos (Hugo/Jekyll).
+
+#### 3. Estrategias de distribución (`playbook_distribution.md`) — ya existe
+- Cómo llevar tus playbooks a otros proyectos: copia directa, submódulos, symlinks.
+- Recomendación por defecto: copiar lo que necesitás.
+
+#### 4. Cómo lanzar tu Open Playbook (`como-empezar.md`) — por crear
+- Guía paso a paso para que alguien arranque su propio repo.
+- Crear el repo, elegir licencia, escribir el primer playbook.
+- Estructura mínima viable: README + 1 guía + LICENSE.
+- Cómo publicar el sitio con Docsify (link a la guía `github_pages-docsify.md`).
+    - [ ] No, usar un motor estático, very si es mejor Jekyll o Hugo. 
+
+#### 5. Cómo mantenerlo (`mantenimiento.md`) — por crear
+- Cuándo agregar una guía nueva vs. actualizar una existente.
+- El ciclo bidireccional: proyecto → playbook → proyecto.
+- Versionado y changelog (¿vale la pena?).
+
+#### 6. Roadmap de la idea (`roadmap.md`) — por crear
+- Internacionalización (es/en/pt).
+- Registro comunitario de playbooks (¿un awesome-list?).
+- Evaluación de migrar de Docsify a Hugo/Jekyll para SEO e i18n nativos.
+- Integración con ecosistema de agentes: ¿cómo un agente descubre y consume playbooks de terceros?
+
+#TODO: agregar instrucciones para el AGENTS.md
+#TODO: wish list, cosas que me gustaria que tenga en el futuro, no es lo mismo que un roadmap.
+#TODO: Como agregar comentarios en linea de los usuarios?
+#TODO: Mecanismo de retroalimentacion de los usuarios
 
 ---
 
-## Documentación
+## Estado actual
 
-- [Reglas de un Playbook Personal](playbook_rules.md) — Las 4 reglas fundamentales: Markdown puro, modularidad, portabilidad y fronteras de gobernanza.
-- [Estrategias de distribución](playbook_distribution.md) — Cómo compartir tu playbook: submódulos, symlinks o plantillas.
-
----
-
-## Ejemplo real
-
-Este repositorio es un playbook en acción: el de **[@jpgil](https://github.com/jpgil)**. Puedes explorarlo, tomar las guías que te sirvan, o usarlo como plantilla para crear el tuyo.
-
-👉 [Ver las guías operativas](https://github.com/jpgil/playbook#guías-operativas)
+- **Motor del sitio:** Docsify (renderizado en cliente, sin build).
+- **Contenido existente:** `playbook_rules.md`, `playbook_distribution.md`.
+- **Contenido por crear:** `como-empezar.md`, `mantenimiento.md`, `roadmap.md`.
+- **Decisión pendiente:** Evaluar migración a Hugo/Jekyll para SEO nativo y soporte multilingüe.
 
 ---
 
-## Inspiración y referencias
+## Notas de implementación
 
-- [How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — GitHub Blog, análisis de 2.500+ repositorios.
-- [Evaluating AGENTS.md](https://www.infoq.com/news/2026/03/agents-context-file-value-review/) — ETH Zurich, 2026. Por qué los archivos de contexto monolíticos hacen más daño que bien.
-- [Management as Code (MaC)](https://pewma-ai.github.io/mac/) — Método de gestión en texto plano que inspiró la gobernanza de este proyecto.
-
----
-
-## Notas de implementación del sitio
-
-> **Estado actual:** El sitio usa Docsify (renderizado en el cliente, sin build).
->
-> **Pendiente de evaluación:** Migrar a Hugo o Jekyll para obtener SEO nativo, indexación HTML estática y soporte multilingüe integrado (es/en/pt vía estructura de directorios `i18n`). Hugo tiene ventaja en velocidad de build y soporte de idiomas out-of-the-box (`config.toml` con `[languages]`). Si se decide migrar, crear una guía operativa para documentar el proceso.
+> El sitio Docsify ya está funcional. Las páginas nuevas se crean como archivos `.md` en esta carpeta y se registran en `_sidebar.md`. No requiere build ni deploy manual — cada `git push` actualiza el sitio.

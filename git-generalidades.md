@@ -1,7 +1,11 @@
-# Convenciones Git
+---
+title: Convenciones Git
+description: Convenciones de commits, ramas y operaciones en Git para mantener un historial limpio.
+date: 2026-03-15
+source: https://github.com/jpgil/playbook/blob/main/git-generalidades.md
+---
 
-> **Para humanos y agentes IA.**
-> Reglas para commits, branches y operaciones Git en un repositorio.
+# Convenciones Git
 
 ---
 

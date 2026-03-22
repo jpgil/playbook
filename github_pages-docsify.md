@@ -1,7 +1,11 @@
-# Publicar `/docs/` como sitio Docsify en GitHub Pages
+---
+title: Publicar docs con Docsify en GitHub Pages
+description: Publicar /docs/ como sitio navegable usando Docsify en GitHub Pages, sin procesos de compilación.
+date: 2026-03-15
+source: https://github.com/jpgil/playbook/blob/main/github_pages-docsify.md
+---
 
-> **Para humanos y agentes IA.**
-> Cómo configurar un repositorio para publicar la carpeta `/docs/` como sitio de documentación navegable con Docsify, sin proceso de build, con publicación automática en cada `git push`.
+# Publicar `/docs/` como sitio Docsify en GitHub Pages
 
 ---
 

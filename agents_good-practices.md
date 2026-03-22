@@ -1,7 +1,11 @@
-# Buenas Prácticas para Agentes IA en un Repositorio
+---
+title: Buenas Prácticas para Agentes en un Repositorio
+description: Cómo configurar estándares únicos de contexto y documentar reglas operativas dentro de un repositorio.
+date: 2026-03-15
+source: https://github.com/jpgil/playbook/blob/main/agents_good-practices.md
+---
 
-> **Para humanos y agentes IA.**
-> Cómo configurar agentes IA en un repositorio, qué archivo lee cada herramienta, y cómo mantener una sola fuente de verdad.
+# Buenas Prácticas para Agentes IA en un Repositorio
 
 ---
 
