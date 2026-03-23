@@ -2,7 +2,7 @@
 title: Publicar docs con Docsify en GitHub Pages
 description: Publicar /docs/ como sitio navegable usando Docsify en GitHub Pages, sin procesos de compilación.
 date: 2026-03-15
-source: https://github.com/jpgil/playbook/blob/main/github_pages-docsify.md
+source: https://github.com/jpgil/playbook/blob/main/github-pages-docsify.md
 ---
 
 # Publicar `/docs/` como sitio Docsify en GitHub Pages

@@ -1,3 +1,10 @@
+---
+title: Sincronización Obsidian ↔ Google Drive con rclone
+description: Sincronizar bidireccionalmente Markdown de repositorios locales hacia Google Drive para Obsidian móvil, sin contaminar la nube con .git.
+date: 2026-03-22
+source: https://github.com/jpgil/playbook/blob/main/macOS-obsidian-gdrive-synchronization.md
+---
+
 # Sincronización Obsidian ↔ Google Drive con rclone (macOS)
 
 Cómo sincronizar en macOS bidireccionalmente los Markdown de repositorios locales hacia Google Drive para consumirlos en Obsidian móvil, sin contaminar la nube con archivos `.git`.
@@ -303,3 +310,23 @@ flowchart TD
 - [ ] ¿`.plist` creado en `~/Library/LaunchAgents/`?
 - [ ] ¿Demonio cargado con `launchctl load`?
 - [ ] ¿DriveSync en el teléfono apuntando a `Mi unidad/MaC`?
+
+---
+
+## Fronteras
+
+| Nivel | Regla |
+|---|---|
+| **Hacer siempre** | Ejecutar `--resync` la primera vez o después de cambios estructurales grandes. |
+| **Hacer siempre** | Usar `--modify-window 1s` para evitar falsos conflictos entre APFS y FUSE. |
+| **Preguntar primero** | Antes de cambiar los filtros de inclusión/exclusión (puede borrar archivos en destino). |
+| **Nunca hacer** | Poner repositorios Git completos dentro de la carpeta sincronizada por Google Drive. |
+
+---
+
+## Recursos
+
+- rclone bisync: https://rclone.org/bisync/
+- fswatch: https://emcrisostomo.github.io/fswatch/
+- launchd: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
+

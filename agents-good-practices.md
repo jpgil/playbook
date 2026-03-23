@@ -2,9 +2,9 @@
 title: Buenas Prácticas para Agentes en un Repositorio
 description: Cómo configurar estándares únicos de contexto y documentar reglas operativas dentro de un repositorio.
 date: 2026-03-15
-source: https://github.com/jpgil/playbook/blob/main/agents_good-practices.md
+source: https://github.com/jpgil/playbook/blob/main/agents-good-practices.md
 ---
-# Buenas Prácticas para Agentes IA en un Repositorio
+# Buenas Prácticas para Agentes en un Repositorio
 
 ## El problema
 

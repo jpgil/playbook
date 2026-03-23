@@ -1,3 +1,10 @@
+---
+title: Buenas Prácticas de Cron en macOS
+description: Cómo configurar cron en macOS resolviendo los problemas habituales de permisos (Full Disk Access) y entorno ($PATH).
+date: 2026-03-22
+source: https://github.com/jpgil/playbook/blob/main/macOS-cron-practices.md
+---
+
 # Buenas Prácticas: Cron en macOS
 
 `cron` sigue siendo completamente funcional en macOS y es una excelente opción rápida frente a `launchd`, especialmente si tienes memoria muscular de Linux. Sin embargo, macOS impone dos restricciones de seguridad y entorno que hacen que los trabajos programados fallen silenciosamente si no se configuran.
@@ -42,8 +49,22 @@ PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 15 * * * * cd "/Users/tu-usuario/ruta/a/tu/proyecto" && (date; tu-comando --opcion) >> cron-execution.log 2>&1
 ```
 
-## Resumen de Checklists (`crontab -l`)
+---
+
+## Checklist (`crontab -l`)
+
 - [ ] ¿`cron` tiene Full Disk Access habilitado?
-- [ ] ¿Tu `crontab` declara explicitamente la variable `PATH` al principio?
+- [ ] ¿Tu `crontab` declara explícitamente la variable `PATH` al principio?
 - [ ] ¿Las rutas en los comandos utilizan comillas absolutas?
 - [ ] ¿Concatenas y agrupas stdout/stderr (`2>&1`) útil para debuggear?
+
+---
+
+## Fronteras
+
+| Nivel | Regla |
+|---|---|
+| **Hacer siempre** | Declarar `PATH` al inicio del crontab. |
+| **Hacer siempre** | Redirigir stdout y stderr a un log para detectar fallos silenciosos. |
+| **Preguntar primero** | Antes de otorgar Full Disk Access a un nuevo binario. |
+| **Nunca hacer** | Asumir que el entorno de cron tiene el mismo `$PATH` que tu terminal. |
