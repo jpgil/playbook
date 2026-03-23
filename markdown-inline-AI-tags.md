@@ -25,7 +25,8 @@ Los tags usan `#` seguido de una palabra clave en mayúsculas, sin espacio entre
 
 ---
 
-## Fronteras
+## Agentes
+Esta tabla debe ser respetada por agentes IA.
 
 | Nivel | Regla |
 |---|---|
@@ -33,3 +34,9 @@ Los tags usan `#` seguido de una palabra clave en mayúsculas, sin espacio entre
 | **Hacer siempre** | Ejecutar `#AI-TODO` de inmediato y transformar en `#TODO` para revisión del usuario. |
 | **Preguntar primero** | Antes de eliminar o cambiar un `#TODO` o `#ASK-USER` existente sin que esté resuelto. |
 | **Nunca hacer** | Ignorar un `#ASK-USER` sin responder ni un `#AI-TODO` sin ejecutar. |
+
+## Recursos
+
+- Obsidian Tags: https://help.obsidian.md/Editing+and+formatting/Tags
+- Conventional Comments: https://conventionalcomments.org
+- Todo Tree (VS Code): https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree

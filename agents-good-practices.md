@@ -98,7 +98,8 @@ Las secciones recomendadas, en orden:
 
 ---
 
-## Fronteras
+## Agentes
+Esta tabla debe ser respetada por agentes IA.
 
 | Nivel | Regla |
 |---|---|

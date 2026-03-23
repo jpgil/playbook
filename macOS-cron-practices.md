@@ -1,11 +1,11 @@
 ---
-title: Buenas Prácticas de Cron en macOS
-description: Cómo configurar cron en macOS resolviendo los problemas habituales de permisos (Full Disk Access) y entorno ($PATH).
+title: Cron en macOS
+description: Configurar cron en macOS resolviendo los problemas habituales de permisos (Full Disk Access) y entorno ($PATH).
 date: 2026-03-22
 source: https://github.com/jpgil/playbook/blob/main/macOS-cron-practices.md
 ---
 
-# Buenas Prácticas: Cron en macOS
+# Cron en macOS
 
 `cron` sigue siendo completamente funcional en macOS y es una excelente opción rápida frente a `launchd`, especialmente si tienes memoria muscular de Linux. Sin embargo, macOS impone dos restricciones de seguridad y entorno que hacen que los trabajos programados fallen silenciosamente si no se configuran.
 
@@ -60,7 +60,8 @@ PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 ---
 
-## Fronteras
+## Agentes
+Esta tabla debe ser respetada por agentes IA.
 
 | Nivel | Regla |
 |---|---|
@@ -68,3 +69,8 @@ PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 | **Hacer siempre** | Redirigir stdout y stderr a un log para detectar fallos silenciosos. |
 | **Preguntar primero** | Antes de otorgar Full Disk Access a un nuevo binario. |
 | **Nunca hacer** | Asumir que el entorno de cron tiene el mismo `$PATH` que tu terminal. |
+
+## Recursos
+
+- https://osxdaily.com/2020/04/27/fix-cron-permissions-macos-full-disk-access/
+- https://www.klingt.net/articles/how-to-setup-and-debug-a-cronjob-in-macos.html 

@@ -251,7 +251,8 @@ Reemplazar el `<link>` de Google Fonts y la variable `--base-font-family`.
 
 ---
 
-## Fronteras
+## Agentes
+Esta tabla debe ser respetada por agentes IA.
 
 | Nivel | Regla |
 |---|---|

@@ -313,7 +313,8 @@ flowchart TD
 
 ---
 
-## Fronteras
+## Agentes
+Esta tabla debe ser respetada por agentes IA.
 
 | Nivel | Regla |
 |---|---|
